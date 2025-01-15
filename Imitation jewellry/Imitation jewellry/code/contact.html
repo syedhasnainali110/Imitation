@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imitation jewellery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  main {
+    padding: 20px;
+  }
+
+
+  .contact-content {
+    max-width: 800px;
+    margin: 20px auto 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* text-align: center; */
+  }
+  .colorr {
+    color: #676b7a;
+}
+ul {
+   color: #000000a8;
+}
+
+  .contact-content h1 {
+    text-align: left;
+    color: #000;
+    font-size: xx-large;
+    font-weight: bold;
+    font-stretch: expanded;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border-left: 4px solid #2ecc71;
+
+  }
+
+  .contact-content p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+  }
+
+
+  .contact-form {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-form h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: lighter;
+    font-size: xx-large;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000;
+  }
+
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+
+  .contact-form button {
+    width: 98%;
+    padding: 10px;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .contact-form button:hover {
+    background-color: #2ecc71;
+  }
+
+
+  .chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #27ae60;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .chat-button:hover {
+    background-color: #2ecc71;
+    transform: scale(1.1);
+  }
+
+  .chat-button:active {
+    transform: scale(1);
+  }
+   iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    margin-top: 40px;
+    position: relative;
+    
+} 
+
+  
+
+  /* Tablet Devices */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 1.8em;
+    }
+
+    .navbar ul {
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-content h1 {
+      font-size: 1.8em;
+    }
+
+    .contact-form h2 {
+      font-size: 1.5em;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button {
+      width: 100%;
+    }
+
+    .chat-button {
+      padding: 12px 20px;
+      font-size: 0.9em;
+    }
+
+    footer .footer-navbar ul {
+      flex-direction: column;
+    }
+  }
+
+  /* Mobile Devices */
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.6em;
+    }
+
+    .navbar ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .contact-content h1 {
+      font-size: 1.5em;
+    }
+
+    .contact-form h2 {
+      font-size: 1.3em;
+    }
+
+    .chat-button {
+      padding: 10px 18px;
+      font-size: 0.8em;
+    }
+
+    footer .footer-navbar ul {
+      flex-direction: column;
+    }
+  }
+
+  /* Large Screens (Laptop/ Desktop) */
+  @media (min-width: 1024px) {
+    .navbar ul {
+      justify-content: center;
+    }
+
+    .contact-content h1 {
+      font-size: 2em;
+    }
+
+    .contact-form h2 {
+      font-size: 2em;
+    }
+  }
+</style>
+
+<body>
+     <!-- navbar -->
+     <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="index.html"><img src="image/logo.png" alt="logo"
+                    style="height: 70px; width: 150px;"></a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <img src="image/logo.png" alt="logo" style="height: 70px; width: 150px;">
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active navh" aria-current="page" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="new.html">NEW ARRIVELS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="bridal.html">BRIDAL JEWELLERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CATEGORIES
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="ring.html">Rings</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="pendant.html">Pendant & Necklace</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="bracelet.html">Bracelets</a></li>
+                            </ul>
+
+                    </ul>
+
+                </div>
+
+            </div>
+            <a href="#" class="btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">login</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button </div>
+    </nav>
+  <main>
+    <section class="contact-content">
+       <h1>Contact</h1>
+      <div class="colorr mt-4">
+          <p> <b>We’re here to help! Whether you have a question about our products, need assistance with an order, or want to
+          discuss a custom request, our team is ready to assist.</b> </p>
+      <ul>
+          <li><b>Email: Reach out to us for any inquiries or support.</b></li>
+          <li><b>Message Form: Use the contact form on our website to send us a message directly.</b></li>
+          <li><b>Response Time: We aim to respond to all inquiries within 24 hours.</b></li>
+      </ul>
+      <p><b>Don't hesitate to get in touch - we'd love to hear from you</b></p>
+          </div>
+    </section>
+
+
+    <section class="contact-form">
+      <h2>Let's Chat</h2>
+      <form action="#" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+  <button class="chat-button">Let's Chat</button>
+    <div class="container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.819128417593!2d67.05012157527824!3d24.92480147907232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e6405a10f39%3A0xf2355ad3c9ddcb51!2sAl-Syed%20Jewellers!5e0!3m2!1sen!2s!4v1673069563000!5m2!1sen!2s"
+            allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+    <!-- footer -->
+    <div class="container-fluid mt-5 border-top">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3 mt-5">
+                    <a href="index.html"><img src="image/logo.png" alt="" style="height: 80px; width: 130px;"></a>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Customer Care</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-links p-0 text-body-secondary ho">Help
+                                Center</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-links p-0 text-body-secondary ho">Corporate &
+                                Bulk Purchasing</a></li>
+                        <li class="nav-item mb-2"><a href="contact.html"
+                                class="nav-links p-0 text-body-secondary ho">Contact Us</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-links p-0 text-body-secondary ho">Purchase
+                                Protection</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-links p-0 text-body-secondary ho">Returns &
+                                Refunds</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-links p-0 text-body-secondary ho">faq</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Syed Jewellers</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="about.html"
+                                class="nav-links p-0 text-body-secondary ho">About Us</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-links p-0 text-body-secondary ho">Terms &
+                                Conditions</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-links p-0 text-body-secondary ho">Digital
+                                Payments</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-links p-0 text-body-secondary ho">Privacy
+                                Policy</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-links p-0 text-body-secondary ho">Online
+                                Shopping App</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-links p-0 text-body-secondary ho">Book an
+                                Appointment</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Newsletter Signup</h5>
+                        <p>Subscribe to our newsletter and get 5% off your first purchase</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>© 2024 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-body-emphasis hs" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li class="ms-3"><a class="link-body-emphasis hs" href="#"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis hs" href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Imitation jewellery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="index.html"><img src="image/logo.png" alt="logo"
+                    style="height: 70px; width: 150px;"></a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <img src="image/logo.png" alt="logo" style="height: 70px; width: 150px;">
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active navh" aria-current="page" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="new.html">NEW ARRIVELS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="bridal.html">BRIDAL JEWELLERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                CATEGORIES
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="ring.html">Rings</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="pendant.html">Pendant & Necklace</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="bracelet.html">Bracelets</a></li>
+                            </ul>
+
+                    </ul>
+
+                </div>
+
+            </div>
+            <a href="#" class="btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">login</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button </div>
+    </nav>
+
+
+    <!-- crousal -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide intro1"><img src="image/intro1.png" alt="intro img" style="background-size: cover;"></div>
+            <div class="swiper-slide intro1"><img src="image/intro2.png" alt="intro img" style="background-size: cover;"></div>
+            <div class="swiper-slide intro1"><img src="image/newint.png" alt="intro img" style="background-size: cover;"></div>
+
+        </div>
+        <div class="swiper-button-next" style="color: #e69d15;"></div>
+        <div class="swiper-button-prev" style="color: #e69d15;"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- services section  -->
+    <div class="cont mt-4">
+        <div class="card1">
+            <div class="icon">
+                <i class="fa-solid fa-truck"></i>
+            </div>
+            <div class="text">
+                <h4>FREE SHIPING</h4>
+                <P>Free shiping in all over pakistan</P>
+            </div>
+        </div>
+        <div class="card1">
+            <div class="icon">
+                <i class="fa-solid fa-plane"></i>
+            </div>
+            <div class="text">
+                <h4>INTERNATIONAL SHIPING</h4>
+                <P>Get free shiping on order above $350</P>
+            </div>
+        </div>
+        <div class="card1">
+            <div class="icon">
+                <i class="fa-solid fa-shield"></i>
+            </div>
+            <div class="text">
+                <h4> RETURN & EXCHANGE</h4>
+                <P>We offer easy return & exchange policies. <a href="cont.html">Read More</a> </P>
+            </div>
+        </div>
+        <div class="card1">
+            <div class="icon">
+                <i class="fa-regular fa-credit-card"></i>
+            </div>
+            <div class="text">
+                <h4>100% PAYMAENT SECURE </h4>
+                <P>We accept all international & Local Debit/ Credit card</P>
+            </div>
+        </div>
+
+    </div>
+    <!-- service section  mobile responsive-->
+    <div class="container3 ">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card" style="border: none;">
+                        <div class="icon">
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+                        <div class="text">
+                            <h4>FREE SHIPING</h4>
+                            <P>Free shiping in all over pakistan</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card" style="border: none;">
+                        <div class="icon">
+                            <i class="fa-solid fa-plane"></i>
+                        </div>
+                        <div class="text">
+                            <h4>INTERNATIONAL SHIPING</h4>
+                            <P>Get free shiping on order above $350</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="border: none;">
+                    <div class="card" style="border: none;">
+                        <div class="icon">
+                            <i class="fa-solid fa-shield"></i>
+                        </div>
+                        <div class="text">
+                            <h4>EASY RETURN & EXCHANGE</h4>
+                            <P>We offer easy return & exchange policies. <a href="">Read More</a> </P>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card" style="border: none;">
+                        <div class="icon">
+                            <i class="fa-regular fa-credit-card"></i>
+                        </div>
+                        <div class="text">
+                            <h4>100% PAYMAENT SECURE </h4>
+                            <P>We accept all international & Local Debit/ Credit card</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    
+    <!-- satisfaction -->
+    <div class="container text-center mb-3 mt-5 tayya">
+        <h2>Hear from our Satisfied Customers</h2>
+      
+    </div>
+    <div class="container py-4">
+        <!-- Grid for large screens -->
+        <div class="row g-3 video-grid">
+          <div class="col-lg-3 statis">
+            <video src="image/video1.mp4" muted loop autoplay controls class="w-100"></video>
+          </div>
+          <div class="col-lg-3 statis">
+            <video src="image/video2.mp4" muted loop autoplay controls class="w-100"></video>
+          </div>
+          <div class="col-lg-3 statis">
+            <video src="image/video3.mp4" muted loop autoplay controls class="w-100"></video>
+          </div>
+          <div class="col-lg-3 statis">
+            <video src="image/video4.mp4" muted loop autoplay controls class="w-100"></video>
+          </div>
+          <!-- <div class="col-lg-3">
+            <video src="image/video5.mp4" muted loop autoplay controls class="w-100"></video>
+          </div> -->
+        </div>
+  
+        <!-- Carousel for small screens -->
+        <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active statis">
+              <video src="image/video1.mp4" muted loop autoplay controls class="w-100"></video>
+            </div>
+            <div class="carousel-item statis">
+              <video src="image/video2.mp4" muted loop autoplay controls class="w-100"></video>
+            </div>
+            <div class="carousel-item statis">
+              <video src="image/video3.mp4" muted loop autoplay controls class="w-100"></video>
+            </div>
+            <div class="carousel-item statis">
+              <video src="image/video4.mp4" muted loop autoplay controls class="w-100"></video>
+            </div>
+            <div class="carousel-item statis">
+              <video src="image/video5.mp4" muted loop autoplay controls class="w-100"></video>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+<!--  circles-->
+    <div class="container text-center mb-3  tayya" style="margin-top: 100px;">
+        <h1>Featured Categories</h1>
+        <hr>
+    </div>
+    <!-- circles responsive -->
+
+    <div class="container container1 " style="margin-top: center;">
+        <div class="row ">
+            <div class="col">
+                <div class="cir-s text-center">
+                    <div class="cir-t"
+                        style="background-image: url('image/c1.png');border-radius: 50%;  background-size: cover;">
+                    </div>
+                    <a href="pendant.html">Pendant Sets</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="cir-s text-center">
+                    <div class="cir-t"
+                        style="background-image: url('image/c2.png');border-radius: 50%; background-size: cover;">
+                    </div>
+                    <a href="pendant.html">pendants</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="cir-s text-center">
+                    <div class="cir-t"
+                        style="background-image: url('image/c3.png');border-radius: 50%; background-size: cover;"></div>
+                    <a href="ring.html">Rings</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container container1">
+        <div class="row ">
+            <div class="col">
+                <div class="cir-s text-center">
+                    <div class="cir-t"
+                        style="background-image: url('image/c4.png');border-radius: 50%; background-size: cover;"></div>
+                    <a href="bracelet.html">Bracelet</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="cir-s text-center">
+                    <div class="cir-t"
+                        style="background-image: url('image/c5.png');border-radius: 50%; background-size: cover;">
+                    </div>
+                    <a href="new.html">Tops</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="cir-s text-center">
+                    <div class="cir-t"
+                        style="background-image: url('image/c6.png');border-radius: 50%; background-size: cover;"></div>
+                    <a href="pendant.html">Nacklace</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--circle Swiper -->
+    <div class="container container2 mt-4" style="height: 260px;">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="container2">
+                        <div class="circles d-flex" style="justify-content: space-evenly;">
+                            <div class="cir-p text-center">
+                                <div class="cir">
+                                    <img class="image" src="image/c1.png" alt="" style="border-radius: 50%;">
+                                </div>
+                                <a href="bracelet.html">Bangels & Bracelets</a>
+                            </div>
+                            <div class="cir-p text-center">
+                                <div class="cir">
+                                    <img class="image" src="image/c2.png" alt="" style="border-radius: 50%;">
+                                </div>
+                                <a href="new.html">Tops</a>
+                            </div>
+                            <div class="cir-p text-center">
+                                <div class="cir">
+                                    <img class="image" src="image/c3.png" alt="" style="border-radius: 50%;">
+                                </div>
+                                <a href="pendant.html">Nacklace Sets</a>
+                            </div>
+                            <div class="cir-p text-center">
+                                <div class="cir">
+                                    <img class="image" src="image/c4.png" alt="" style="border-radius: 50%;">
+                                </div>
+                                <a href="pendant.html">Pendant Sets</a>
+                            </div>
+                            <div class="cir-p text-center">
+                                <div class="cir">
+                                    <img class="image" src="image/c5.png" alt="" style="border-radius: 50%;">
+                                </div>
+                                <a href="new.html">pendants</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="container2">
+                        <div class="circles d-flex" style="justify-content: space-evenly;">
+                            <div class="cir-p text-center">
+                                <div class="cir">
+                                    <img class="image" src="image/c6.png" alt="" style="border-radius: 50%;">
+                                </div>
+                                <a href="ring.html">Rings</a>
+                            </div>
+                            <div class="cir-p text-center">
+                                <div class="cir">
+                                    <img class="image" src="image/c7.png" alt="" style="border-radius: 50%;">
+                                </div>
+                                <a href="new.html">Nose Pin</a>
+                            </div>
+                            <div class="cir-p text-center">
+                                <div class="cir">
+                                    <img class="image" src="image/c1.png" alt="" style="border-radius: 50%;">
+                                </div>
+                                <a href="bracelet.html">Bangles & Bracelets</a>
+                            </div>
+                            <div class="cir-p text-center">
+                                <div class="cir">
+                                    <img class="image" src="image/c2.png" alt="" style="border-radius: 50%;">
+                                </div>
+                                <a href="new.html">Tops</a>
+                            </div>
+                            <div class="cir-p text-center">
+                                <div class="cir">
+                                    <img class="image" src="image/c3.png" alt="" style="border-radius: 50%;">
+                                </div>
+                                <a href="pendant.html">Necklace Sets</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next" style="color: black;"></div>
+            <div class="swiper-button-prev" style="color: black;"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- box feature -->
+    <div class="container text-center mb-3 mt-5">
+        <h1>Featured Categories</h1>
+        <hr>
+    </div>
+    <div class="container d-flex justify-content-center text-center mt-4">
+        <div class="row">
+            <div class="col py-3 py-sm-0 py-md-0">
+                <a href="bridal.html"> <img src="image/w1.png" alt="" style="height: 200px; width: 214px;"></a>
+                <a href="bridal.html" class="btn btn-outline-dark"
+                    style="width:214px; border-radius: 0%; border-color: transparent;">Nur</a>
+            </div>
+            <div class="col py-3 py-sm-0 py-md-0">
+                <img src="image/w2.png" alt="" style="height: 200px; width: 214px;">
+                <a href="new.html" class="btn btn-outline-dark"
+                    style="width:214px; border-radius: 0%; border-color: transparent;">Moissanite</a>
+            </div>
+            <div class="col py-3 py-sm-0 py-md-0">
+                <img src="image/w3.png" alt="" style="height: 200px; width: 214px;">
+                <a href="bracelet.html" class="btn btn-outline-dark"
+                    style="width:214px; border-radius: 0%; border-color: transparent;">Naurang</a>
+            </div>
+            <div class="col py-3 py-sm-0 py-md-0">
+                <img src="image/w4.png" alt="" style="height: 200px; width: 214px;">
+                <a href="bridal.html" class="btn btn-outline-dark"
+                    style="width:214px; border-radius: 0%; border-color: transparent;">Dreamy</a>
+            </div>
+        </div>
+    </div>
+    <!--  wedding daries -->
+    <div class="container text-center mt-4 ">
+        <h2>Syed Jewellers Wedding Diaries</h2>
+
+    </div>
+
+    <div class="container text-center d-flex justify-content-center mt-4">
+        <div class="row">
+            <div class="col py-3 py-sm-0 py-md-">
+                <div class="boxx">
+                    <a href="bridal.html"> <img src="image/d1.png" alt="" style="height: 400px; width: 450px;"></a>
+                </div>
+            </div>
+            <div class="col py-3 py-sm-0 py-md-0">
+                <div class="boxx">
+                    <a href="bridal.html"> <img src="image/d2.png" alt="" style="height: 400px; width: 450px;"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center d-flex justify-content-center mt-3">
+        <div class="row">
+            <div class="col py-3 py-sm-0 py-md-0">
+                <div class="boxx">
+                    <a href="bridal.html"><img src="image/d3.png" alt="" style="height: 400px; width: 450px;"></a>
+                </div>
+            </div>
+            <div class="col py-3 py-sm-0 py-md-0">
+                <div class="boxx">
+                    <a href="bridal.html"> <img src="image/d4.png" alt="" style="height: 400px; width: 450px;"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center d-flex justify-content-center mt-3">
+        <div class="row">
+            <div class="col py-3 py-sm-0 py-md-0 box2">
+                <a href="bridal.html"> <img src="image/d5.png" alt=""></a>
+            </div>
+            <div class="col py-3 py-sm-0 py-md-0 box2">
+                <a href="bridal.html"> <img src="image/d6.png" alt=""></a>
+            </div>
+            <div class="col py-3 py-sm-0 py-md-0 box2  ">
+                <a href="bridal.html"> <img src="image/d7.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <section class="review-section">
+        <h2 class="section-title">Our Celebrities Reviews</h2>
+        <div class="carousel">
+            <div class="carousel-track">
+                <!-- Review 1 -->
+                <div class="review-slide">
+                    <img src="image/review 2.png" alt="Reviewer 1" class="review-image">
+                    <div class="review-content">
+                        <p class="review-stars">⭐⭐⭐⭐⭐</p>
+                        <p class="review-text">Zee.sy’s stunning jewelry makes me feel confident and glamorous for any
+                            occasion.</p>
+                        <p class="review-author">— Mizna Waqas</p>
+                    </div>
+                </div>
+                <!-- Review 2 -->
+                <div class="review-slide">
+                    <img src="image/review 3.png" alt="Reviewer 2" class="review-image">
+                    <div class="review-content">
+                        <p class="review-stars">⭐⭐⭐⭐⭐</p>
+                        <p class="review-text">Love Zee.sy's unique designs and high-quality pieces at an affordable
+                            price!</p>
+                        <p class="review-author">— Nida Yasir</p>
+                    </div>
+                </div>
+                <!-- Review 3 -->
+                <div class="review-slide">
+                    <img src="image/review 4.png" alt="Reviewer 3" class="review-image">
+                    <div class="review-content">
+                        <p class="review-stars">⭐⭐⭐⭐</p>
+                        <p class="review-text">The jewelry is beautiful and delivery was prompt. Highly recommended!</p>
+                        <p class="review-author">— Ahmed Khan</p>
+                    </div>
+                </div>
+                <!-- Review 4 -->
+                <div class="review-slide">
+                    <img src="image/review 5.png" alt="Reviewer 4" class="review-image">
+                    <div class="review-content">
+                        <p class="review-stars">⭐⭐⭐⭐⭐</p>
+                        <p class="review-text">Exceptional quality and stunning designs. Perfect for special occasions.
+                        </p>
+                        <p class="review-author">— Sana Sheikh</p>
+                    </div>
+                </div>
+                <!-- Review 5 -->
+                <div class="review-slide">
+                    <img src="image/review 6.png" alt="Reviewer 5" class="review-image">
+                    <div class="review-content">
+                        <p class="review-stars">⭐⭐⭐⭐⭐</p>
+                        <p class="review-text">Zee.sy's jewelry collection is simply breathtaking and worth every penny!
+                        </p>
+                        <p class="review-author">— Zara Ali</p>
+                    </div>
+                </div>
+                <!-- Review 6 -->
+                <div class="review-slide">
+                    <img src="image/review.png" alt="Reviewer 6" class="review-image">
+                    <div class="review-content">
+                        <p class="review-stars">⭐⭐⭐⭐⭐</p>
+                        <p class="review-text">Beautiful craftsmanship! It adds a touch of elegance to any outfit.</p>
+                        <p class="review-author">— Bilal Ashraf</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <div class="container-fluid mt-5 border-top">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3 mt-5">
+                    <a href="index.html"><img src="image/logo.png" alt="" style="height: 80px; width: 130px;"></a>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Customer Care</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-links p-0 text-body-secondary ho">Help
+                                Center</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-links p-0 text-body-secondary ho">Corporate &
+                                Bulk Purchasing</a></li>
+                        <li class="nav-item mb-2"><a href="contact.html"
+                                class="nav-links p-0 text-body-secondary ho">Contact Us</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-links p-0 text-body-secondary ho">Purchase
+                                Protection</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-links p-0 text-body-secondary ho">Returns &
+                                Refunds</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-links p-0 text-body-secondary ho">faq</a></li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Syed Jewellers</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="about.html"
+                                class="nav-links p-0 text-body-secondary ho">About Us</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-links p-0 text-body-secondary ho">Terms &
+                                Conditions</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-links p-0 text-body-secondary ho">Digital
+                                Payments</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-links p-0 text-body-secondary ho">Privacy
+                                Policy</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-links p-0 text-body-secondary ho">Online
+                                Shopping App</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-links p-0 text-body-secondary ho">Book an
+                                Appointment</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Newsletter Signup</h5>
+                        <p>Subscribe to our newsletter and get 5% off your first purchase</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>© 2024 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-body-emphasis hs" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li class="ms-3"><a class="link-body-emphasis hs" href="#"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis hs" href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+    <!-- login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginModalLabel"><img src="image/logo.png" alt=""
+                            style="height: 60px; width: 120px;"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label" required>Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"
+                                aria-describedby="emailHelp" required>
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label"
+                                placeholder="Password">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
